@@ -5,7 +5,7 @@ const Web3 = require("web3");
 const web3 = new Web3(ganache.provider());
 const { interface, bytecode } = require("../compile");
 
-let defaultMessage = "Hi there Neshoma. Keep Up your head up";
+let defaultMessage = "Hi there Neshoma. Keep your head up";
 let newMessage = "Maybe you should relax because you seem awfully tired.";
 
 let accounts;
@@ -25,7 +25,7 @@ beforeEach(async () => {
   // })
 });
 
-// use one of those accounts to deploy contract
+
 describe("Inbox", () => {
   it("deploys a contract", () => {
     assert.ok(inbox.options.address);
